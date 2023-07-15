@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Thumbs/favicon-32x32.png" type="image/x-icon">
+    <title>Newsletter sign-up form with success message</title>
+</head>
+<body>
+    <main>
+        <aside class="left-side">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <div class="features-box">
+             <div class="feature-box">
+               <img src="Thumbs/icon-list.svg" alt="Feature Analog">
+               <p class="feature-description">Product discovery and building what matters</p>
+             </div>
+             <div class="feature-box">
+                <img src="Thumbs/icon-list.svg" alt="Feature Analog">
+                <p class="feature-description">Measuring to ensure updates are a success</p>
+             </div>
+             <div class="feature-box">
+                <img src="Thumbs/icon-list.svg" alt="Feature Analog">
+                <p class="feature-description">And much more!</p>
+             </div>
+          </div>
+          <div class="input-box">
+            <label for="mail-in">Email address</label>
+            <input type="email" name="User E-Mail" id="mail-in" placeholder="email@comany.com" required>
+            <button type="submit" id="submit-btn">Subscribe to monthly newsletter</button>
+            <span class="error-message">Valid email required</span>
+          </div>
+        </aside>
+        <aside class="right-side"></aside>
+        <script src="app.js"></script>
+    </main>
+    <div class="success-box">
+       <img src="Thumbs/icon-list.svg" alt="Website Logo">
+       <h1>Thanks for subscribing !</h1>
+       <p>A confirmation email has been sent to <span id="user-email-in"></span>.Please open it and click the button inside to confirm your subscription.</p>
+       <button type="button" id="dismMsg">Dismiss Message</button>
+    </div>
+</body>
+</html>
